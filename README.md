@@ -1,1 +1,1 @@
-# Understandind serial position effect
+# Human computer interaction lab 
