@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hick Hyman's Law
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script> 
+    </head>
+    <body>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+                <div class="container" id="nav">
+                <a class="navbar-brand" href="/hick/index1.html" >Hick Hyman's Law</a>
+                <div id="but" style="display: none;">
+                <button  onclick="tasks()" class="btn btn-danger">Tasks</button>
+                </div>                  
+
+                </div>
+            </nav>
+                  <header class="masthead" id="head">
+                      <div class="col-12 text-left">
+                        <div id="problem-stat">
+                            <div class="jumbotron text-left">
+                              <h2 style="margin-left:5%;">Problem Statement</h2>
+                              <p style="margin-left: 7%;">
+                                You have to design a menu structure for ordering house-hold items from a mall directly to your 
+                                home through a mobile phone interface. Categorize the items in whatever way you wish into menus
+                                 and submenus. Design 3 alternative screens or menus for effectively ordering items from listed 
+                                 categories, making use of Hicks Law. Compare your designs by actually measuring the reaction time
+                                  for various test cases and also using the Hick’s Law expression. 
+                              </p>
+                            </div>
+                            <div class="container h-100">
+                            <div class="row  h-100 align-items-left">
+                            <h2>Procedure</h2>
+                          <pre>
+                            1. You will see a red box with a button below.
+
+                            2. An instruction will appear .
+                            
+                            3. You have to take action as per the instruction.
+                            
+                            4. There are total 10 instructions to execute sequencially.
+                            
+                            5. When you are done, your reaction times that were logged will be displayed.
+                          </pre>
+                        </div>                        
+                          <button id="bttn" onclick="show_task()" class="btn btn-danger">Start</button>
+                        </div>
+                        </div>
+                      </div>
+                 <br><br><br>
+                 <div id="btns" style="display: none;">
+                  <div id="kitchen" style="border: 1px solid black;">
+                    <h2>Kitchen</h2>
+                      <button class="btn btn-success">Kitchen table</button>
+                      <button class="btn btn-success">Wastebasket</button>
+                      <button class="btn btn-success">Refrigerator</button>
+                      <button class="btn btn-success" id="Dish wash" onclick="valid('Dish wash')">Dish wash</button>
+                      <button class="btn btn-success">Tea cups</button>
+                      <button class="btn btn-success">spoons</button>
+                     <button class="btn btn-success">Kettle</button>
+                     <button class="btn btn-success">Toaster</button>
+                     <button class="btn btn-success">Bottles</button>
+
+
+
+                  </div>
+                  
+                  <div id="furniture" style="border: 1px solid black;">
+                      <h2>Furniture</h2>
+                      <button class="btn btn-success" id="Sofa" onclick="valid('Sofa')">Sofa</button>
+                      <button class="btn btn-success">Couch</button>
+                      <button class="btn btn-success">Coffee table</button>
+                     <button class="btn btn-success">Bookshelves</button>
+                     <button class="btn btn-success">Wardrobe</button>
+                     <button class="btn btn-success">Dressing table</button>
+                     <button class="btn btn-success" id="Bed" onclick="valid('Bed')">Bed</button>
+                     <button class="btn btn-success">Step ladder</button>
+
+
+
+
+
+                  </div>
+                  <div id="others" style="border: 1px solid black;">
+                      <h2>Others</h2>
+                      <button class="btn btn-success" id="Speaker" onclick="valid('Speaker')">Speaker</button>
+                      <button class="btn btn-success">Painkillers</button>
+                     <button class="btn btn-success" id="Curtains" onclick="valid('Curtains')">Curtains</button>
+                     <button class="btn btn-success" id="Soaps" onclick="valid('Soaps')">Soaps</button>
+                     <button class="btn btn-success">Torch</button>
+                     <button class="btn btn-success">Hammer</button>
+                     <button class="btn btn-success">Dustbin</button>
+                     <button class="btn btn-success">Screws</button>
+                     <button class="btn btn-success">Iron</button>
+                     <button class="btn btn-success">Clotheshorse</button>
+                     <button class="btn btn-success">Tweezers</button>
+                     <button class="btn btn-success">Mattress</button>
+                     <button class="btn btn-success">bell</button>
+                     <button class="btn btn-success">Door mat</button>
+                     <button class="btn btn-success">LIght bulbs</button>
+                     <button class="btn btn-success" id="Television" onclick="valid('Television')">Television</button>
+                     <button class="btn btn-success">Laundry basket</button>
+                     <button class="btn btn-success" id="Pants" onclick="valid('Pants')">Pants</button>
+                     <button class="btn btn-success">Pillows</button>
+                     <button class="btn btn-success">Plasters</button>
+                     <button class="btn btn-success">Jug</button>
+                     <button class="btn btn-success">Thermometer</button>
+                     <button class="btn btn-success" id="Buckets" onclick="valid('Buckets')">Buckets</button>
+                     <button class="btn btn-success">Plunger</button>
+                     <button class="btn btn-success" id="Jacket" onclick="valid('Jacket')">Jacket</button>
+                     <button class="btn btn-success">Photo frames</button>
+                     <button class="btn btn-success">Antiseptics</button>
+                     <button class="btn btn-success">Property alarm</button>
+
+                  </div>
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                 </div>
+                </header>
+                        <div id="analysis" style="display:none;margin-top: 10px;">
+                                <div class="faq-wrapper">
+                                        <div class="container">
+                                          <div class="heading">
+                                                <h2 >Result</h2>
+                                          </div>
+                                          <div class="faq">
+                                                <div id=main style="font-size:x-large">
+                                                        <p style="font-size:x-large" class="main" id="time-taken"></p>
+                                                </div>
+                                          </div>
+                                        </div>
+                                      </div>                        
+                                        
+                              </div>
+                  
+    </body>
+</html>

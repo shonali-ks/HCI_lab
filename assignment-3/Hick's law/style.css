@@ -1,0 +1,51 @@
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  pre{
+      font-weight: 700%;
+      color: black;
+  }
+li{
+    font-size: larger;
+}
+#btns button,h2{
+    margin: 1%;
+    padding: 1%;
+    font-size: larger;
+
+}
+span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+#main{
+    padding: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+.heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+  }
+  .heading h2 {
+    font-weight: normal;
+  }
+
+  .faq-wrapper {
+    background-color: #e6ecf0;
+    text-align: center;
+    padding-bottom: 80px;
+    color: #5f5d60;
+  }
+
+#nav button{
+  float: right;
+  margin: 1%;
+  padding:1%
+}
