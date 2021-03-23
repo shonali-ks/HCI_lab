@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          Short Term Memory
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script> 
+    </head>
+    <body>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+                <div class="container">
+                <a class="navbar-brand" href="/index.html" >Short Term Memory</a>
+                </div>
+            </nav>
+                  <header class="masthead" id="head">
+                      <div class="col-12 text-left">
+                        <div id="problem-stat">
+                            <div class="jumbotron text-left">
+                              <h2 style="margin-left:5%;">Problem Statement</h2>
+                              <p style="margin-left: 7%;">
+                                Click on the below button to reveal a matrix. 
+                                This matrix will be show for 10 seconds and then you have to recall and complete the same matrix .
+                              </p>
+                            </div>
+                            
+                            <div class="container h-100">
+                            <div class="row  h-100 align-items-left">
+                            <h2>Matrix</h2>
+                            <button id="bttn" onclick="showmatrix()" class="btn btn-success">Press the button to see the Matrix</button>
+                        </div>                        
+                          <img id="matrix" src="matrix.png" style="margin: 5%;display: none;">
+                        </div>
+                        </div>
+                      </div>
+                      
+                      <div id="answer">
+                      <div class="container h-100" style="padding-left:2%">
+                
+                          <div id="matrix-ans" style="display:none;" class="row  h-100 align-items-left">
+                          <h2 id="head-matrix">Fill the matrix</h2>
+                          <table class="table table-bordered">
+                           
+                            <tbody>
+                              <tr>                                
+                                <td ><input type="text"  style="width: 50px;" id="1"></td>
+                                <td ><input type="text"  style="width: 50px;" id="2"></td>
+                                <td ><input type="text"  style="width: 50px;" id="3"></td>
+                                <td ><input type="text"  style="width: 50px;" id="4"></td>
+                              </tr>
+                              <tr>
+                                
+                                <td ><input type="text"  style="width: 50px;" id="5"></td>
+                                <td ><input type="text"  style="width: 50px;" id="6"></td>
+                                <td ><input type="text"  style="width: 50px;" id="7"></td>
+                                <td ><input type="text"  style="width: 50px;" id="8"></td>
+                              </tr>
+                              <tr>
+                                <td ><input type="text"  style="width: 50px;" id="9"></td>
+                                <td ><input type="text"  style="width: 50px;" id="10"></td>
+                                <td ><input type="text"  style="width: 50px;" id="11"></td>
+                                <td ><input type="text"  style="width: 50px;" id="12"></td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                        
+                              <button id="submit" onclick="submit()" class="btn btn-success" >Submit</button>
+                          </div>
+                        </div>
+                    </div>
+                </header>
+                        <div id="analysis" style="display:none;margin-top: 10px;">
+                                <div class="faq-wrapper">
+                                        <div class="container">
+                                          <div class="heading">
+                                                <h2 >Result</h2>
+                                          </div>
+                                          <div class="faq">
+                                                <p style="font-size:x-large" class="main" id="char"></p>
+                                                <p style="font-size:x-large" class="main" id="loc"></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="faq-wrapper1">
+                                            <div class="container">
+                                                    <h2 >Analysis</h2>
+                                               <p style="font-size:large">
+                                                Short-term memory (STM) is the capability of holding information in mind in active, readily available state for a short period of time. 
+                                                The duration of short-term memory is in the order of seconds.  The contents in STM spontaneously decay over time. Thus to retain 
+                                                information for longer time,
+                                                 the information must be periodically repeated or rehearsed.Experiments have shown that STM has a limited capacity to
+                                                  remember 7+/-2 chunks of information at a time. This limit is called memory span. In a memory span test,
+                                                   the experimenter presents lists of items (e.g. digits or words) of increasing length. An individual span is 
+                                                   determined as the longest list length 
+                                                 that he or she can recall in the given order for at least half of the times.
+                                                </p>                                          
+                                            </div>
+                                          </div>                             
+                                        
+                              </div>
+                  
+    </body>
+</html>
